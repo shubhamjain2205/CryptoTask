@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My First Tatum DApp</title>
+    <script src="/index.5baa4167.js" defer=""></script>
+    <style>body {
+  color: #4f37fd;
+  text-align: center;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  border: 2px solid #2ccd9a;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.operation-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2ccd9a;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+    <h1>Home Page!</h1>
+    <input type="text" id="address" placeholder="Enter wallet address" value="0x82d9730e487dcCd1106ebd9FfA5f1200950E7002">
+
+    <!-- Get Balance -->
+    <button class="operation-button" onclick="getBalance()">Get Balance</button>
+    <div id="balance" class="result"></div>
+
+    <!-- Get Last Block Number -->
+    <button class="operation-button" onclick="getLastBlockNumber()">Get Last Block Number</button>
+    <div id="lastBlockNumber" class="result"></div>
+
+    <!-- Get All NFTs Wallet Holds -->
+    <button class="operation-button" onclick="getAllNFTs()">Get All NFTs Wallet Holds</button>
+    <div id="nftBalance" class="result"></div>
+
+    <!-- Create Subscription -->
+    <button class="operation-button" onclick="createSubscription()">Create Subscription</button>
+    <div id="subscriptionResult" class="result"></div>
+
+    <!-- Fund -->
+    <button class="operation-button" onclick="fund()">Fund</button>
+    <div id="fundResult" class="result"></div>
+
+    <!-- Upload File to IPFS -->
+    <button class="operation-button" onclick="uploadFileToIPFS()">Upload File to IPFS</button>
+    <div id="ipfsUploadResult" class="result"></div>
+</body>
+</html>
